@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct FriendModel: Decodable {
+struct UserModel: Decodable {
 	var response: [UserProfile]
 }
 

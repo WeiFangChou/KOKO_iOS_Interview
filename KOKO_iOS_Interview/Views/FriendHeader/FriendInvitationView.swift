@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FriendInviteView: UIView {
+class FriendInvitationView: UIView {
 	lazy var friendAvatorImageView: UIImageView = {
 		let imageView = UIImageView()
 		imageView.image = .imgFriendsFemaleDefault
@@ -44,13 +44,31 @@ class FriendInviteView: UIView {
 	init() {
 		super.init(frame: .zero)
 		setupUI()
+		setupShadow()
 	}
 	
 	required init?(coder: NSCoder) {
 		fatalError("Failed to init using from storyboards")
 	}
 	
+	override func layoutIfNeeded() {
+		super.layoutIfNeeded()
+	}
+	
+	func setupShadow() {
+		backgroundColor = .whiteTwo
+		layer.shadowColor = UIColor.black.cgColor
+		layer.shadowOpacity = 0.1
+		layer.shadowOffset = CGSize(width: 0, height: 4)
+		layer.shadowRadius = 16
+		layer.masksToBounds = false
+	}
+	
 	func setupUI() {
+		layer.cornerRadius = 6
+		layer.masksToBounds = true
+		
+		backgroundColor = .whiteTwo
 		addSubview(friendAvatorImageView)
 		addSubview(friendNameLabel)
 		addSubview(friendDescLabel)
@@ -58,15 +76,16 @@ class FriendInviteView: UIView {
 		addSubview(friendRejectButton)
 		
 		friendAvatorImageView.anchor(top: topAnchor, leading: leadingAnchor, bottom: bottomAnchor, trailing: friendNameLabel.leadingAnchor,
-		                             topPadding: 15, leadingPadding: 15, bottomPadding: 15, trailingPadding: 15, width: 40, height: 40)
-		friendNameLabel.anchor(top: topAnchor, leading: friendAvatorImageView.trailingAnchor, bottom: friendDescLabel.topAnchor, trailing: friendAcceptButton.leadingAnchor,
-		                       topPadding: 14, leadingPadding: 0, bottomPadding: 2, trailingPadding: 15, width: 0, height: 0)
-		friendDescLabel.anchor(top: friendNameLabel.bottomAnchor, leading: friendAvatorImageView.trailingAnchor, bottom: bottomAnchor, trailing: friendAcceptButton.leadingAnchor,
-		                       topPadding: 0, leadingPadding: 15, bottomPadding: 15, trailingPadding: 15, width: 0, height: 0)
-		friendAcceptButton.anchor(top: topAnchor, leading: friendNameLabel.trailingAnchor, bottom: bottomAnchor, trailing: friendRejectButton.leadingAnchor,
-		                          topPadding: 20, leadingPadding: 0, bottomPadding: 20, trailingPadding: 15, width: 30, height: 30)
+		                             topPadding: 15, leadingPadding: 15, bottomPadding: 15, trailingPadding: 15, width: 40, height: 40, aspectRatio: 1)
+		
+		friendNameLabel.anchor(top: topAnchor, leading: friendAvatorImageView.trailingAnchor, bottom: friendDescLabel.topAnchor, trailing: nil,
+		                       topPadding: 14, leadingPadding: 0, bottomPadding: 2, trailingPadding: 15, width: 0, height: 30)
+		friendDescLabel.anchor(top: friendNameLabel.bottomAnchor, leading: friendAvatorImageView.trailingAnchor, bottom: bottomAnchor, trailing: nil,
+		                       topPadding: 0, leadingPadding: 15, bottomPadding: 15, trailingPadding: 15, width: 0, height: 20)
+		friendAcceptButton.anchor(top: topAnchor, leading: nil, bottom: bottomAnchor, trailing: friendRejectButton.leadingAnchor,
+		                          topPadding: 0, leadingPadding: 0, bottomPadding: 0, trailingPadding: 15, width: 30, height: 30)
 		friendRejectButton.anchor(top: topAnchor, leading: friendAcceptButton.trailingAnchor, bottom: bottomAnchor, trailing: trailingAnchor,
-		                          topPadding: 20, leadingPadding: 0, bottomPadding: 20, trailingPadding: 15, width: 30, height: 30)
+		                          topPadding: 0, leadingPadding: 0, bottomPadding: 0, trailingPadding: 15, width: 30, height: 30)
 	}
 	
 	func configure(friendInvite: FriendProfile) {
@@ -76,5 +95,5 @@ class FriendInviteView: UIView {
 
 @available(iOS 17, *)
 #Preview {
-	FriendInviteView()
+	FriendInvitationView()
 }

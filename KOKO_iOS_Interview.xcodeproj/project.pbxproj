@@ -6,7 +6,26 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		1512781A2D0F733F0006A0D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15226B582D06C25E00A976D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15226B5F2D06C25E00A976D4;
+			remoteInfo = KOKO_iOS_Interview;
+		};
+		151278272D0F76F60006A0D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15226B582D06C25E00A976D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15226B5F2D06C25E00A976D4;
+			remoteInfo = KOKO_iOS_Interview;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		151278162D0F733F0006A0D9 /* KOKO_iOS_InterviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KOKO_iOS_InterviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		151278232D0F76F60006A0D9 /* KOKO_iOS_InterviewXCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KOKO_iOS_InterviewXCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15226B602D06C25E00A976D4 /* KOKO_iOS_Interview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KOKO_iOS_Interview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -21,6 +40,11 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		151278242D0F76F60006A0D9 /* KOKO_iOS_InterviewXCTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = KOKO_iOS_InterviewXCTests;
+			sourceTree = "<group>";
+		};
 		15226B622D06C25E00A976D4 /* KOKO_iOS_Interview */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -32,6 +56,20 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		151278132D0F733F0006A0D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		151278202D0F76F60006A0D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		15226B5D2D06C25E00A976D4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -46,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				15226B622D06C25E00A976D4 /* KOKO_iOS_Interview */,
+				151278242D0F76F60006A0D9 /* KOKO_iOS_InterviewXCTests */,
 				15226B612D06C25E00A976D4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				15226B602D06C25E00A976D4 /* KOKO_iOS_Interview.app */,
+				151278162D0F733F0006A0D9 /* KOKO_iOS_InterviewTests.xctest */,
+				151278232D0F76F60006A0D9 /* KOKO_iOS_InterviewXCTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +102,49 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		151278152D0F733F0006A0D9 /* KOKO_iOS_InterviewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1512781E2D0F733F0006A0D9 /* Build configuration list for PBXNativeTarget "KOKO_iOS_InterviewTests" */;
+			buildPhases = (
+				151278122D0F733F0006A0D9 /* Sources */,
+				151278132D0F733F0006A0D9 /* Frameworks */,
+				151278142D0F733F0006A0D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1512781B2D0F733F0006A0D9 /* PBXTargetDependency */,
+			);
+			name = KOKO_iOS_InterviewTests;
+			packageProductDependencies = (
+			);
+			productName = KOKO_iOS_InterviewTests;
+			productReference = 151278162D0F733F0006A0D9 /* KOKO_iOS_InterviewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		151278222D0F76F60006A0D9 /* KOKO_iOS_InterviewXCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 151278292D0F76F60006A0D9 /* Build configuration list for PBXNativeTarget "KOKO_iOS_InterviewXCTests" */;
+			buildPhases = (
+				1512781F2D0F76F60006A0D9 /* Sources */,
+				151278202D0F76F60006A0D9 /* Frameworks */,
+				151278212D0F76F60006A0D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				151278282D0F76F60006A0D9 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				151278242D0F76F60006A0D9 /* KOKO_iOS_InterviewXCTests */,
+			);
+			name = KOKO_iOS_InterviewXCTests;
+			packageProductDependencies = (
+			);
+			productName = KOKO_iOS_InterviewXCTests;
+			productReference = 151278232D0F76F60006A0D9 /* KOKO_iOS_InterviewXCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		15226B5F2D06C25E00A976D4 /* KOKO_iOS_Interview */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15226B732D06C26000A976D4 /* Build configuration list for PBXNativeTarget "KOKO_iOS_Interview" */;
@@ -90,9 +174,17 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1600;
+				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					151278152D0F733F0006A0D9 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 15226B5F2D06C25E00A976D4;
+					};
+					151278222D0F76F60006A0D9 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 15226B5F2D06C25E00A976D4;
+					};
 					15226B5F2D06C25E00A976D4 = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -113,11 +205,27 @@
 			projectRoot = "";
 			targets = (
 				15226B5F2D06C25E00A976D4 /* KOKO_iOS_Interview */,
+				151278152D0F733F0006A0D9 /* KOKO_iOS_InterviewTests */,
+				151278222D0F76F60006A0D9 /* KOKO_iOS_InterviewXCTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		151278142D0F733F0006A0D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		151278212D0F76F60006A0D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		15226B5E2D06C25E00A976D4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -128,6 +236,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		151278122D0F733F0006A0D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1512781F2D0F76F60006A0D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		15226B5C2D06C25E00A976D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,7 +259,96 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1512781B2D0F733F0006A0D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15226B5F2D06C25E00A976D4 /* KOKO_iOS_Interview */;
+			targetProxy = 1512781A2D0F733F0006A0D9 /* PBXContainerItemProxy */;
+		};
+		151278282D0F76F60006A0D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15226B5F2D06C25E00A976D4 /* KOKO_iOS_Interview */;
+			targetProxy = 151278272D0F76F60006A0D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		1512781C2D0F733F0006A0D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BAFS86PG22;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.weifang.KOKO-iOS-InterviewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KOKO_iOS_Interview.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KOKO_iOS_Interview";
+			};
+			name = Debug;
+		};
+		1512781D2D0F733F0006A0D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BAFS86PG22;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.weifang.KOKO-iOS-InterviewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KOKO_iOS_Interview.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KOKO_iOS_Interview";
+			};
+			name = Release;
+		};
+		1512782A2D0F76F60006A0D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BAFS86PG22;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.weifang.KOKO-iOS-InterviewXCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KOKO_iOS_Interview.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KOKO_iOS_Interview";
+			};
+			name = Debug;
+		};
+		1512782B2D0F76F60006A0D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BAFS86PG22;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.weifang.KOKO-iOS-InterviewXCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KOKO_iOS_Interview.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KOKO_iOS_Interview";
+			};
+			name = Release;
+		};
 		15226B742D06C26000A976D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -153,6 +364,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -181,6 +393,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,6 +529,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1512781E2D0F733F0006A0D9 /* Build configuration list for PBXNativeTarget "KOKO_iOS_InterviewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1512781C2D0F733F0006A0D9 /* Debug */,
+				1512781D2D0F733F0006A0D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		151278292D0F76F60006A0D9 /* Build configuration list for PBXNativeTarget "KOKO_iOS_InterviewXCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1512782A2D0F76F60006A0D9 /* Debug */,
+				1512782B2D0F76F60006A0D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		15226B5B2D06C25E00A976D4 /* Build configuration list for PBXProject "KOKO_iOS_Interview" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

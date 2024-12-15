@@ -22,7 +22,7 @@ struct FriendModel: Decodable {
 }
 
 /// 好友Profile
-struct FriendProfile: Codable {
+struct FriendProfile: Decodable {
 	/// 姓名
 	var name: String
 	///	邀請狀態
@@ -36,7 +36,7 @@ struct FriendProfile: Codable {
 }
 
 /// 邀請狀態
-enum InviteStatus: Int, Codable {
+enum InviteStatus: Int, Decodable {
 	/// 邀請送出
 	case pending = 0
 	/// 已完成
